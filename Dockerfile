@@ -6,7 +6,7 @@ RUN apt-get install curl -y
 RUN apt install -y ffmpeg opus-tools bpm-tools 
 RUN curl -sL https://deb.nodesource.com/setup_17.x | bash -
 RUN apt install nodejs -y
-RUN git clone https://github.com/Krakinz/Mee6.git
+RUN git clone https://github.com/Krakinz/Mee6.git/tree/Mee6Group
 RUN cd Mee6
 WORKDIR /Mee6
 RUN npm install --force
