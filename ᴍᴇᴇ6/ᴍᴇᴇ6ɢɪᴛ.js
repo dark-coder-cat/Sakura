@@ -4,7 +4,7 @@ const exec = require("child_process").exec;
 
 const gitPull = async () => {
   await git.fetch();
-  var newCommits = await git.log(["KrakinzLab..origin/KrakinzLab"]);
+  var newCommits = await git.log(["Mee6Group..origin/Mee6Group"]);
   if (newCommits.total) {
     console.log(chalk.blueBright("💡⬰ New Update pending, updating..."));
     await git.pull("origin", "KrakinzLab", (err, update) => {
